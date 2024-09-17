@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Firebase Data Input</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>    
+  <div class="starter-container">
+    <button id="open-btn">Click to open</button>
+  </div>
+  
+  <div class="overlay" id="overlay"></div>
+  
+  <div class="container" id="contact-container">
+    <form action="" id="contactForm">  
+      <div class="alert">Your Message has been leaked</div>
+      <br>
+      <br>
+      <div class="inputBox">
+        <input type="text" id="name" placeholder="Name">
+      </div> 
+        
+      <div class="inputBox">
+        <input type="email" id="email" placeholder="Email">
+      </div> 
+        
+      <div class="inputBox">
+        <input type="text" id="studId" placeholder="Student ID">
+      </div> 
+  
+      <div class="inputBox">
+        <textarea id="MsgContent" cols="40" rows="10" placeholder="Your Message that you want to say"></textarea>
+      </div> 
+  
+  
+      <div class="inputBox">
+        <button type="submit">Submit</button>
+      </div> 
+      <button id="close-btn">Close</button> <!-- add this close button -->
+    </form>  
+  </div>
+    </form>  
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>  
+  <script src="script.js"></script>  
+</body>  
+</html>
