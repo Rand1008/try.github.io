@@ -1,0 +1,87 @@
+body{
+  background-image:url(https://preview.redd.it/high-quality-stelle-and-firefly-selfie-also-no-uid-v0-zidps4on1mjc1.png?width=640&crop=smart&auto=webp&s=3717e312d90b01a7f1cc39df9a695103d35829e5) ;
+  background-position: cover;
+}
+
+.starter-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#open-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  display: block; /* add this to make the button a block element */
+  margin: 0 auto; /* add this to center the button horizontally */
+}
+
+#open-btn:hover {
+  background-color: #3e8e41;
+}
+
+#contact-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 700px; /* adjust the width to your liking */
+  height: 600px; /* adjust the height to your liking */
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+}
+
+.inputBox {
+  margin-bottom: 20px;
+}
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputBox input:focus, .inputBox textarea:focus {
+  border-color: #4CAF50;
+}
+
+.inputBox button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  display: block; /* add this to make the button a block element */
+  margin: 0 auto; /* add this to center the button horizontally */
+}
+
+.inputBox button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#close-btn:hover {
+  background-color: #3e8e41;
+}
