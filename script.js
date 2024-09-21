@@ -1,4 +1,3 @@
-// Initialize Firebase
 firebase.initializeApp({
   apiKey: 'AIzaSyBIrOPXXekMWli0y-0NvQ5KmWQ2kssJrNw',
   authDomain: 'data-b738a.firebaseapp.com',
@@ -8,38 +7,34 @@ firebase.initializeApp({
   messagingSenderId: '390422282553',
 });
 
-// Get the database reference
 var database = firebase.database();
 
-// Get the form elements
 var form = document.getElementById('contactForm');
 var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
 var studIdInput = document.getElementById('studId');
 var msgContentInput = document.getElementById('MsgContent');
 
-// Add an event listener to the form submit event
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  // Get the input values
   var name = nameInput.value;
   var email = emailInput.value;
   var studId = studIdInput.value;
   var msgContent = msgContentInput.value;
 
-  // Create a new database entry
+  var timestamp = new Date().toLocaleString();
+  
   var newData = {
     name: name,
     email: email,
     studId: studId,
     msgContent: msgContent,
+    timestamp: timestamp,
   };
 
-  // Push the data to the database
   database.ref('messages').push(newData);
 
-  // Show a success message
   document.querySelector('.alert').innerHTML = 'Your message has been sent!';
   document.querySelector('.alert').style.display = 'block';
   form.reset()
@@ -54,3 +49,23 @@ document.getElementById('overlay').addEventListener('click', function() {
   document.getElementById('contact-container').style.display = 'none';
   document.getElementById('overlay').style.display = 'none';
 });
+
+var images = [
+            'sam.jpg', // Replace with your first image path
+            'download.jfif',
+            'Robin.jpg',
+            'stellfly.png',
+            'animation.gif'
+        ];
+
+        // Current image index
+        var currentIndex = 0;
+
+        // Function to change background image every 20 seconds
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % images.length; // Cycle through the images array
+            document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+        }
+
+        // Call changeBackground function every 20 seconds (20000 milliseconds)
+        setInterval(changeBackground, 10000);
