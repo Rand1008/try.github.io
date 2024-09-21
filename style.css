@@ -1,29 +1,14 @@
-body {
-  background-image: url(Robin.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-@media only screen and (max-width: 1024px) {
-            body {
-                background-image: url(sam.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-            }
+ body {
+            background-image: url('sam.jpg');
+            background-color: #000; /* Fallback color */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            transition: opacity 1s ease-in-out;
         }
 
-        @media only screen and (max-width: 768px) {
-            body {
-                background-image: url(FireFly.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-            }
-        }
         #alert{
             align-items: center;
         }
@@ -51,15 +36,18 @@ body {
         }
 
         #contact-container {
+            background-image: url(https://img.freepik.com/premium-photo/pencils-red-container-with-pencil-wall_953680-1819.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px 60px;
+            justify-content: center;
             display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position:fixed;
+            left: 45%;
+            top: 15%;
+            transform: translate(-50%, 5%);
+            border: 3px solid #999999;
+            z-index: 9;
+            background-color: #999999;
             width: 700px; 
             height: 600px; 
         }
@@ -80,7 +68,7 @@ body {
         }
 
         .inputBox input, .inputBox textarea {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
