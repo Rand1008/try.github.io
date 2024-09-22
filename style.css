@@ -1,6 +1,6 @@
- body {
-            background-image: url('sam.jpg');
-            background-color: #000; /* Fallback color */
+body {
+            background-image: url('bg.gif');
+            background-color: #000; 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -18,17 +18,25 @@
         }
 
         #open-btn {
-            background-color: #4CAF50;
-            color: #fff;
+            background-color: rgb(255, 0, 0); 
+            color: white;
             padding: 15px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 60px 60px;
             cursor: pointer;
             font-size: 18px;
             transition: background-color 0.3s ease;
             display: block; 
-            margin: 0 auto;
+            margin: 10px auto;
             position: relative; 
+            animation: colorChange 3s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: rgb(255, 0, 0); } 
+            33% { background-color: rgb(0, 255, 0); } 
+            66% { background-color: rgb(0, 0, 255); } 
+            100% { background-color: rgb(255, 0, 0); } 
         }
 
         #open-btn:hover {
@@ -36,14 +44,16 @@
         }
 
         #contact-container {
-            background-image: url(https://img.freepik.com/premium-photo/pencils-red-container-with-pencil-wall_953680-1819.jpg);
+            background-image: url(pixel.jpg);
             background-size: 100% 100%;
             border-radius: 30px 60px;
             justify-content: center;
             display: none;
             position:fixed;
-            left: 45%;
-            top: 15%;
+            left: 50%;
+            right: 50%;
+            top: 10%;
+            bottom: 15%;
             transform: translate(-50%, 5%);
             border: 3px solid #999999;
             z-index: 9;
@@ -63,15 +73,37 @@
             filter: blur(5px);
         }
 
+        .alert{
+            text-align: center;
+            font-size:xx-large
+        }
+
+        h1 {
+            text-align: center;
+            font-size: medium;
+        }
+
         .inputBox {
             margin-bottom: 20px;
         }
 
-        .inputBox input, .inputBox textarea {
-            width: 95%;
+        .inputBox input {
+            width: 94%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            border-radius: 40px 60px;
+            justify-content: center;
+            margin-left: 10px;
+        }
+
+        .inputBox textarea{
+            width: 94%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            justify-content: center;
+            margin-left: 10px;
         }
 
         .inputBox input:focus, .inputBox textarea:focus {
@@ -92,9 +124,5 @@
         }
 
         .inputBox button[type="submit"]:hover {
-            background-color: #3e8e41;
-        }
-
-        #close-btn:hover {
             background-color: #3e8e41;
         }
