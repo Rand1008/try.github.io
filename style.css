@@ -93,7 +93,7 @@ body {
             background-color: rgba(255, 255, 255, 0);
             width: 94%;
             padding: 10px;
-            border: 1px solid black;
+            border: 1px solid #000000;
             border-radius: 5px;
             color: #fff;
             border-radius: 40px 60px;
@@ -108,7 +108,7 @@ body {
         .inputBox textarea{
             width: 94%;
             padding: 10px;
-            border: 1px solid black;
+            border: 1px solid #000000;
             background-color: rgba(255, 255, 255, 0);
             border-radius: 5px;
             justify-content: center;
