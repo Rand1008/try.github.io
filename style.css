@@ -44,7 +44,7 @@ body {
         }
 
         #contact-container {
-            background-image: url(pixel.jpg);
+            background-image: url(form.jpg);
             background-size: 100% 100%;
             border-radius: 30px 60px;
             justify-content: center;
@@ -73,14 +73,16 @@ body {
             filter: blur(5px);
         }
 
-        .alert{
+         .alert{
             text-align: center;
-            font-size:xx-large
+            font-size:xx-large;
+            color: rgba(255, 255, 255, 0.7);
         }
 
         h1 {
             text-align: center;
             font-size: medium;
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .inputBox {
@@ -88,24 +90,35 @@ body {
         }
 
         .inputBox input {
+            background-color: rgba(255, 255, 255, 0);
             width: 94%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            color: #fff;
             border-radius: 40px 60px;
             justify-content: center;
             margin-left: 10px;
+            outline: none;
         }
 
+        .inputBox input::placeholder{
+            color: rgba(255, 255, 255, 0.7);
+        }
         .inputBox textarea{
             width: 94%;
             padding: 10px;
             border: 1px solid #ccc;
+            background-color: rgba(255, 255, 255, 0);
             border-radius: 5px;
             justify-content: center;
+            color: #fff;
             margin-left: 10px;
         }
 
+        .inputBox textarea::placeholder{
+            color: rgba(255, 255, 255, 0.7);
+        }
         .inputBox input:focus, .inputBox textarea:focus {
             border-color: #4CAF50;
         }
